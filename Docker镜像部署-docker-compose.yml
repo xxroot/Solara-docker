@@ -3,6 +3,7 @@ services:
     image: xiaosahuogui/solara-music:latest 
     container_name: solara-music
     restart: unless-stopped
+    network_mode: host # 修改为主机网络
     ports:
       - "3001:3001"
     environment:
